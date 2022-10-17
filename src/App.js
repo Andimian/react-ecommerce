@@ -1,5 +1,3 @@
-import Header from "./components/header/Header";
-import Footer from "./components/Footer";
 import Cart from "./components/Cart";
 import Goods from "./components/Goods";
 import goodsList from "./catalog";

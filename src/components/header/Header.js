@@ -9,7 +9,7 @@ const Header = () => {
                 <span className='logo'>Shop</span>
             </div>
             <nav>
-                <NavLink to="/">Каталог</NavLink>
+                <NavLink to="/" end>Каталог</NavLink>
                 <NavLink to="/cart">Корзина</NavLink>
             </nav>
         </header>
