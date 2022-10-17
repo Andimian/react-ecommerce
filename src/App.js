@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import Cart from "./components/Cart";
 import Goods from "./components/Goods";
@@ -9,19 +9,19 @@ import {
     Route,
 } from "react-router-dom";
 import NotFound from "./components/404";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <div className="Wrapper">
         <BrowserRouter>
-            <Header/>
             <Routes>
-                <Route path="/" element={<Goods />}> </Route>
-                <Route path="/cart" element={<Cart />}> </Route>
-                <Route index element={<Goods />} />
-                <Route path="*" element={<NotFound />} />
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Goods goods={goodsList}/>} />
+                    <Route path="cart" element={<Cart />}> </Route>
+                    <Route path="*" element={<NotFound />} />
+                </Route>
             </Routes>
-            <Footer/>
         </BrowserRouter>
     </div>
   );
