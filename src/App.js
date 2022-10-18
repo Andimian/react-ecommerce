@@ -1,5 +1,5 @@
 import Cart from "./components/Cart";
-import Goods from "./components/Goods";
+import Goods from "./components/goods/Goods";
 import goodsList from "./catalog";
 import {
     BrowserRouter,
